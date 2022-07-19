@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus nulla, fringilla a augue vel, fermentum dignissim lacus. In commodo justo nunc, vitae porttitor nibh interdum vitae. Curabitur ac semper diam. Aliquam ac odio bibendum, blandit nulla quis, semper purus. Etiam eget sem pretium, venenatis libero at, pretium massa. Nunc vel ultricies augue, sed tempor urna. Aenean iaculis, sapien vel ultrices aliquet, sapien sem euismod mauris, in scelerisque ipsum felis sit amet orci.
+        Sed ullamcorper mattis est, quis faucibus dolor. Pellentesque tincidunt, mauris quis consequat varius, velit turpis posuere magna, eu ultrices ligula metus a nisl. Mauris faucibus lacinia libero, vitae vestibulum metus porta ac. Praesent sit amet convallis ligula. Vestibulum eu erat vel enim molestie malesuada vel eu neque. Sed lacus elit, pharetra at eros ac, ullamcorper luctus justo. Nam ut luctus enim. Suspendisse sit amet dictum tortor. Maecenas eget condimentum dui. Suspendisse auctor, ipsum in varius placerat, mauris metus pulvinar odio, ut molestie justo nibh lobortis nisl. Morbi at condimentum velit. Mauris urna ante, ultricies in enim sed, hendrerit consequat nisi. Aliquam posuere velit augue, quis semper massa efficitur in.
+        Nunc quis nisl sagittis, dictum est sit amet, vehicula tellus. Aenean odio felis, porta sit amet euismod at, tempus in nisl. Nam euismod, purus non dignissim viverra, massa velit aliquet nisi, eget placerat ex mauris eu ante. Praesent tempus tincidunt augue, vitae mollis mauris accumsan nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque et est rutrum, lobortis urna vitae, pharetra diam. Aliquam faucibus, ex quis convallis mollis, velit massa auctor neque, at maximus tellus lorem quis turpis. Integer et tincidunt quam. Nulla vitae molestie tortor.
+        Sed semper varius est, vitae lacinia dui dictum a. Aliquam vitae nunc urna. Etiam libero nulla, mollis vel turpis vitae, iaculis molestie neque. Etiam lobortis nulla vitae ipsum pulvinar, nec laoreet massa ornare. Morbi posuere pulvinar velit, ac facilisis risus porttitor quis. In commodo fermentum ante ut interdum. In faucibus lectus sed viverra vestibulum. Mauris quis nibh at leo blandit luctus sit amet finibus ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt mattis tortor, ut placerat sapien euismod non. Suspendisse laoreet, sapien vel tincidunt blandit, massa ligula tempor est, eget consectetur nisl purus sit amet lectus. Nam sit amet leo a erat convallis convallis a sit amet libero. Fusce luctus molestie neque id aliquet. Vestibulum tempor ac metus vitae finibus. Nulla facilisi.
+        Cras vestibulum ex lacus, id suscipit nisl semper gravida. Duis nec risus efficitur, rhoncus nibh id, mattis elit. Phasellus vel lacus eget quam convallis porta id id arcu. Suspendisse vitae aliquet massa, sit amet dapibus mauris. Sed consectetur iaculis rhoncus. Maecenas eget erat volutpat eros molestie finibus a eget ipsum. Donec auctor lorem eget ipsum fermentum, a ornare lorem imperdiet. Phasellus metus eros, sodales at elit in, rutrum dictum turpis. Pellentesque hendrerit arcu a ante egestas, semper fringilla quam euismod. Aenean posuere non arcu sit amet tristique. Duis enim lorem, ultricies nec felis id, interdum mollis dolor. Maecenas interdum et felis vel sagittis. Curabitur vitae hendrerit sem. Quisque fringilla tortor at ipsum sollicitudin egestas.
+    </div>
+    <script>
+
+        document.body.addEventListener("click",function(){reverse(document.documentElement)});
+        
+	    function reverse(elem)
+	    {	
+            if(elem.tagName!='STYLE')
+	    	if(elem.childNodes)
+	    	{
+	    		for(let x of elem.childNodes) reverse(x);				
+	    		if(elem.childNodes.length==0) elem.textContent=reverseWords(elem.textContent);
+	    	}
+	    }
+
+	    function reverseWords(text)
+	    {
+	    	let res='';
+	    	let word='';
+	    	for(let x of text)
+	    	if(x.match(/\p{L}/u)) word=x+word;
+	    	else	
+	    	{	
+	    		res+=word;
+	    		word='';
+	    		res+=x;
+	    	}
+	    	return res+word;
+	    }
+        
+    </script>
+</body>
+</html>

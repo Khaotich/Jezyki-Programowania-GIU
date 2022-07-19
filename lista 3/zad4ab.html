@@ -1,0 +1,303 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    td
+    {
+        height:40px;width:40px;
+        border: solid grey 1px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="menu">
+        <button id="generate">Generuj Planszę</button>
+        <button id="solve">Rozwiąż Planszę</button>
+    </div><br>
+    <div id="field"></div>
+    </center>
+
+    <script>
+
+        var field;
+        var copy;
+
+        function generateField()
+        {
+            var html = '<table>';
+            for(var i = 0; i < 9; i++)
+            {
+                html += '<tr>';
+                for(var j = 0; j < 9; j++)
+                {
+                    html += '<td></td>';
+                }
+                html += '</tr>';
+            }
+            html += '</table>';
+            document.querySelector('#field').innerHTML = html;
+            field = document.querySelectorAll('td');
+        }
+
+        function generujPlansze(n)
+        {
+            generateField();
+            var ids = [];
+            var los = true;
+
+            var l = n;
+            if(n > 20) l = 20;
+            
+            for(let i = 0; i < l; i++)
+            {
+                los = true;
+                while(los)
+                {
+                    var id = Math.floor(Math.random() * 81);
+                    if(!ids.includes(id))
+                    {
+                        ids.push(id);
+                        los = false;
+                    }
+                }
+            }
+
+            for(let i of ids)
+            {
+                los = true;
+                var k = 0;
+                while(los)
+                {
+                    k = Math.floor(Math.random() * 9 + 1);
+                    los = check(i, k);
+                }
+                field[i].innerText = k;
+            }
+
+            copy = document.querySelector('#field').cloneNode(true).innerHTML;
+        }
+
+        function i2rc(index)
+        {
+            return {row: Math.floor(index / 9), col: index % 9};
+        }
+
+        function rc2i(row, col)
+        {
+            return row * 9 + col;
+        }
+
+        function sq(row, col)
+        {
+            var sqr = 0;
+            if(row < 3)
+            {
+                if(col < 3)
+                {
+                    sqr = 0;
+                }
+                else if(col < 6)
+                {
+                    sqr = 1;
+                }
+                else
+                {
+                    sqr = 2;
+                }
+            }
+            else if(row < 6)
+            {
+                if(col < 3)
+                {
+                    sqr = 3;
+                }
+                else if(col < 6)
+                {
+                    sqr = 4;
+                }
+                else
+                {
+                    sqr = 5;
+                }
+            }
+            else
+            {
+                if(col < 3)
+                {
+                    sqr = 6;
+                }
+                else if(col < 6)
+                {
+                    sqr = 7;
+                }
+                else
+                {
+                    sqr = 8;
+                }
+            }
+            return sqr;
+        }
+
+        function check(id, k)
+        {
+            var row_ = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
+                        [9, 10, 11, 12, 13, 14, 15, 16, 17],
+                        [18, 19, 20, 21, 22, 23, 24, 25, 26],
+                        [27, 28, 29, 30, 31, 32, 33, 34, 35],
+                        [36, 37, 38, 39, 40, 41, 42, 43, 44],
+                        [45, 46, 47, 48, 49, 50, 51, 52, 53],
+                        [54, 55, 56, 57, 58, 59, 60, 61, 62],
+                        [63, 64, 65, 66, 67, 68, 69, 70, 71],
+                        [72, 73, 74, 75, 76, 77, 78, 79, 80]];
+            
+            var col_ = [[0, 9, 18, 27, 36, 45, 54, 63, 72],
+                        [1, 10, 19, 28, 37, 46, 55, 64, 73],
+                        [2, 11, 20, 29, 38, 47, 56, 65, 74],
+                        [3, 12, 21, 30, 39, 48, 57, 66, 75],
+                        [4, 13, 22, 31, 40, 49, 58, 67, 76],
+                        [5, 14, 23, 32, 41, 50, 59, 68, 77],
+                        [6, 15, 24, 33, 42, 51, 60, 69, 78],
+                        [7, 16, 25, 34, 43, 52, 61, 70, 79],
+                        [8, 17, 26, 35, 44, 53, 62, 71, 80]];
+           
+            var sqr_ = [[0, 1, 2, 9, 10, 11, 18, 19, 20],
+                        [3, 4, 5, 12, 13, 14, 21, 22, 23],
+                        [6, 7, 8, 15, 16, 17, 24, 25, 26],
+                        [27, 28, 29, 36, 37, 38, 45, 46, 47],
+                        [30, 31, 32, 39, 40, 41, 48, 49, 50],
+                        [33, 34, 35, 42, 43, 44, 51, 52, 53],
+                        [54, 55, 56, 63, 64, 65, 72, 73, 74],
+                        [57, 58, 59, 66, 67, 68, 75, 76, 77],
+                        [60, 61, 62, 69, 70, 71, 78, 79, 80]];
+
+            var row = i2rc(id).row;
+            var col = i2rc(id).col;
+            var sqr = sq(row, col);
+
+            for(let i of row_[row])
+            {
+                if(field[i].innerText == k)
+                {
+                    return true;
+                }
+            }
+            
+            for(let i of col_[col])
+            {
+                if(field[i].innerText == k)
+                {
+                    return true;
+                }
+            }
+
+            for(let i of sqr_[sqr])
+            {
+                if(field[i].innerText == k)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function acceptable(board, index, value) 
+        {
+            let {row, col} = i2rc(index);
+
+            for (let r = 0; r < 9; ++r) if(board[rc2i(r, col)].innerText == value) return false;
+            for(let c = 0; c < 9; ++c) if(board[rc2i(row, c)].innerText == value) return false;
+
+            let r1 = Math.floor(row / 3) * 3;
+            let c1 = Math.floor(col / 3) * 3;
+            
+            for(let r = r1; r < r1 + 3; r++)
+            {
+                for(let c = c1; c < c1 + 3; ++c)
+                {
+                    if(board[rc2i(r, c)].innerText == value) return false;
+                }
+            }
+
+            return true;
+        }
+
+        function getChoices(board, index)
+        {
+            let choices = [];
+            for(let value = 1; value <= 9; ++value)
+            {
+                if(acceptable(board, index, value)) 
+                {
+                    choices.push(value);
+                }
+            }
+            return choices;
+        }
+
+        function bestBet(board)
+        {
+            let index, moves, bestLen = 100;
+            for(let i = 0; i < 81; ++i)
+            {
+                if(!board[i].innerText)
+                {
+                    let m = getChoices(field, i);
+                    if(m.length < bestLen)
+                    {
+                        bestLen = m.length;
+                        moves = m;
+                        index = i;
+                        if(bestLen == 0) break;
+                    }
+                }
+            }
+            return {index, moves};
+        }
+
+        function solve()
+        {
+            let {index, moves} = bestBet(field);
+            
+            if(index == null) return true;
+            for(let m of moves)
+            {
+                field[index].innerText = m;
+                if(solve()) return true;             
+            }
+
+            return false;
+        }
+
+        function rozwiaz()
+        {
+            var result = solve();
+            if(result == false)
+            {
+                alert("Nie udało się rozwiązać");
+                document.querySelector('#field').innerHTML = copy;
+            }
+        }
+
+        document.querySelector('#generate').addEventListener('click', function()
+        {
+            generujPlansze(25);
+        });
+
+        document.querySelector('#solve').addEventListener('click', function()
+        {
+            rozwiaz();
+        });
+
+        generujPlansze(25);
+
+    </script>
+
+</body>
+</html>

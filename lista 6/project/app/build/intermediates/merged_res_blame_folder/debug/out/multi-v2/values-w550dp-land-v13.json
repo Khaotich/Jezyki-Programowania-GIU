@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\khaot\\Desktop\\project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\khaot\\.gradle\\caches\\transforms-3\\0e6cbbc17d96a2b7698a2f564741ef02\\transformed\\material-1.3.0-alpha02\\res\\values-w550dp-land-v13\\values-w550dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <input>+<input>=<input>
+    <script>
+        let [a, b, c] = document.querySelectorAll('input');
+        a.onkeyup = a.oncut = a.onpaste = b.onkeyup = b.oncut = b.onpaste = function f(){setTimeout(()=> {c.value = +a.value + +b.value;}, 5)};
+        c.onkeyup = c.oncut = c.onpaste = function g(){setTimeout(()=>{a.value = b.value = c.value / 2;}, 5)};
+    </script>
+
+    <!-- 
+        
+        Skrypt dodaje do siebie liczby z inputów (a, b) i wyświetla ich sumę w inpucie (c), operacje następuje po wciśnięciu klawisza na klawiaturze,
+        dlatego trzeba było dodać obsługę wklejania i wycinania zawartości przez odpowiednie eventy.
+        Jeśli wartość zostanie zmieniona w inpucie (c) to połowa wprowadzonej wartości zostanie wprowadzona do inputów (a, b).
+
+     -->
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\666831d194aed099c3caeced24b1ad02\transformed\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.3.0-alpha02] C:\Users\khaot\.gradle\caches\transforms-3\0e6cbbc17d96a2b7698a2f564741ef02\transformed\material-1.3.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\khaot\.gradle\caches\transforms-3\46ee158a54a1c5339a90d8c7ca59b323\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\49817debbbd93912a78b8acf7ab6bb4b\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\f9b6efe6f244467a2a9c96d5ba92e69d\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\3f9766dd95561dc9658451351c1d8ee1\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\eff1585a5199e36f9f5faabc7a7f6f94\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\296c9b9ca451f5ae995e1306a6dc3104\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c7d5d89cad2e4d714e551c50bd137ccf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79dd57b492089776cc763b87c69263a0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\ad588450025c164b030b47caf4119598\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\b3ba196ef92b4149731742d03b174428\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\96a70ff9765b44271c17e06318bea560\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\3c0a5d6c31cacb1397b8ef17811c7f33\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\4717253bb144e060d7fed22dc6754ff3\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\9067ee8bdb4757edf01e65d3724c5d28\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\67809a1ff5de7cbd7bf6b7acc3f2861b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\eac54f864bcab792db21ae6bcc442fc0\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\2847cf6d77645965ff39489603d11ce6\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\78fcb139c696a9b86752be72e04e204d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\69584c70810da2116dc025a556f873f2\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c3ec94dd4a4096c000a41675fcdaffea\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\6a1fac6f9d5a3e07616acfe0e5b33da6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\5d02be6986a27a23a9549c1cfb72fc49\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\dce1bd437d559f4d169e0d317636d068\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\6234eb9516bf668ea8572704b4d00150\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79ecd9828ac17ec620c561feba208429\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\fbe2d099f0051cd732441d5589c790ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\aeab0bf0b6a178da66aa89e4e9a01a54\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\c9eaf13bb27f967c37cca4ce07a89171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\09982b6ceac4ece1d84e46aa0568ceec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\23bfb396ccf4a1c5394bbad9f8423644\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\804d3ca645821e1ecd7f43ab1d27b673\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:4:5-19:19
+MERGED from [com.google.android.material:material:1.3.0-alpha02] C:\Users\khaot\.gradle\caches\transforms-3\0e6cbbc17d96a2b7698a2f564741ef02\transformed\material-1.3.0-alpha02\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0-alpha02] C:\Users\khaot\.gradle\caches\transforms-3\0e6cbbc17d96a2b7698a2f564741ef02\transformed\material-1.3.0-alpha02\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\khaot\.gradle\caches\transforms-3\46ee158a54a1c5339a90d8c7ca59b323\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\khaot\.gradle\caches\transforms-3\46ee158a54a1c5339a90d8c7ca59b323\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c3ec94dd4a4096c000a41675fcdaffea\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c3ec94dd4a4096c000a41675fcdaffea\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:7:9-51
+	android:layout_width
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:11:9-44
+	android:roundIcon
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:8:9-54
+	android:layout_height
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:12:9-45
+	android:icon
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:10:9-40
+activity#com.example.todolist.MainActivity
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:13:9-18:20
+	android:name
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:13:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:14:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\666831d194aed099c3caeced24b1ad02\transformed\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\666831d194aed099c3caeced24b1ad02\transformed\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.3.0-alpha02] C:\Users\khaot\.gradle\caches\transforms-3\0e6cbbc17d96a2b7698a2f564741ef02\transformed\material-1.3.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0-alpha02] C:\Users\khaot\.gradle\caches\transforms-3\0e6cbbc17d96a2b7698a2f564741ef02\transformed\material-1.3.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\khaot\.gradle\caches\transforms-3\46ee158a54a1c5339a90d8c7ca59b323\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\khaot\.gradle\caches\transforms-3\46ee158a54a1c5339a90d8c7ca59b323\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\49817debbbd93912a78b8acf7ab6bb4b\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\49817debbbd93912a78b8acf7ab6bb4b\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\f9b6efe6f244467a2a9c96d5ba92e69d\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\f9b6efe6f244467a2a9c96d5ba92e69d\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\3f9766dd95561dc9658451351c1d8ee1\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\3f9766dd95561dc9658451351c1d8ee1\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\eff1585a5199e36f9f5faabc7a7f6f94\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\eff1585a5199e36f9f5faabc7a7f6f94\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\296c9b9ca451f5ae995e1306a6dc3104\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\296c9b9ca451f5ae995e1306a6dc3104\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c7d5d89cad2e4d714e551c50bd137ccf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c7d5d89cad2e4d714e551c50bd137ccf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79dd57b492089776cc763b87c69263a0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79dd57b492089776cc763b87c69263a0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\ad588450025c164b030b47caf4119598\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\khaot\.gradle\caches\transforms-3\ad588450025c164b030b47caf4119598\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\b3ba196ef92b4149731742d03b174428\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\b3ba196ef92b4149731742d03b174428\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\96a70ff9765b44271c17e06318bea560\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\96a70ff9765b44271c17e06318bea560\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\3c0a5d6c31cacb1397b8ef17811c7f33\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\3c0a5d6c31cacb1397b8ef17811c7f33\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\4717253bb144e060d7fed22dc6754ff3\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\4717253bb144e060d7fed22dc6754ff3\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\9067ee8bdb4757edf01e65d3724c5d28\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\9067ee8bdb4757edf01e65d3724c5d28\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\67809a1ff5de7cbd7bf6b7acc3f2861b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\67809a1ff5de7cbd7bf6b7acc3f2861b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\eac54f864bcab792db21ae6bcc442fc0\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\eac54f864bcab792db21ae6bcc442fc0\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\2847cf6d77645965ff39489603d11ce6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\2847cf6d77645965ff39489603d11ce6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\khaot\.gradle\caches\transforms-3\5d6d1d121da3d34ddae37375735d2105\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\78fcb139c696a9b86752be72e04e204d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\78fcb139c696a9b86752be72e04e204d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\69584c70810da2116dc025a556f873f2\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\69584c70810da2116dc025a556f873f2\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c3ec94dd4a4096c000a41675fcdaffea\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\khaot\.gradle\caches\transforms-3\c3ec94dd4a4096c000a41675fcdaffea\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\6a1fac6f9d5a3e07616acfe0e5b33da6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\6a1fac6f9d5a3e07616acfe0e5b33da6\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\5d02be6986a27a23a9549c1cfb72fc49\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\khaot\.gradle\caches\transforms-3\5d02be6986a27a23a9549c1cfb72fc49\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\dce1bd437d559f4d169e0d317636d068\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\dce1bd437d559f4d169e0d317636d068\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\6234eb9516bf668ea8572704b4d00150\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\6234eb9516bf668ea8572704b4d00150\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79ecd9828ac17ec620c561feba208429\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\79ecd9828ac17ec620c561feba208429\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\fbe2d099f0051cd732441d5589c790ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\fbe2d099f0051cd732441d5589c790ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\aeab0bf0b6a178da66aa89e4e9a01a54\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\aeab0bf0b6a178da66aa89e4e9a01a54\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\c9eaf13bb27f967c37cca4ce07a89171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\c9eaf13bb27f967c37cca4ce07a89171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\09982b6ceac4ece1d84e46aa0568ceec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\09982b6ceac4ece1d84e46aa0568ceec\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\23bfb396ccf4a1c5394bbad9f8423644\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\khaot\.gradle\caches\transforms-3\23bfb396ccf4a1c5394bbad9f8423644\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\804d3ca645821e1ecd7f43ab1d27b673\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\khaot\.gradle\caches\transforms-3\804d3ca645821e1ecd7f43ab1d27b673\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\khaot\Desktop\project\app\src\main\AndroidManifest.xml

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td 
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th, td 
+        {
+            padding: 5px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="menu">
+        <button onclick="play()">Play</button><br><br>
+        Procent bomb %  <input type="number" id="pre" min="0" max="100" value="10"><br><br>
+        Rozmiar planszy <input type="number" id="size" min="1" value="10"><br><br>
+    </div>
+    <div id="field"></div>
+    </center>
+
+    <script>
+
+        var fiel = [];
+        var n = 0;
+        var not_bombs = 0;
+
+        function field()
+        {
+            var field = document.querySelector("#field");
+            var p = document.querySelector("#pre").value;
+            var html = '<table>';
+
+            for(var i = 0; i < n; i++)
+            {
+                html += '<tr>';
+                var tmp = [];
+                for(var j = 0; j < n; j++)
+                {    
+                    if(Math.random() < p/100)
+                    {
+                        html += '<td onclick="check('+ i + ', ' + j +')" classname="bomb"></td>';
+                        tmp.push(true);
+                    }
+                    else
+                    {
+                        html += '<td onclick="check('+ i + ', ' + j +')"></td>';
+                        tmp.push(false);
+                        not_bombs++;
+                    }
+                }
+                fiel.push(tmp);
+                html += '</tr>';
+            }
+            field.innerHTML = html + '</table>';
+        }
+
+        function check(x, y)
+        {
+            var r = document.querySelectorAll('td');
+            if(fiel[x][y])
+            {
+                for(let i of r)
+                {
+                    if(i.getAttribute('classname') === 'bomb') i.style.backgroundColor = 'red';
+                }
+                alert("Koniec gry");
+            }
+            else
+            {
+                not_bombs--;
+                var bombs_around = count(x, y);
+                r[x*n + y].onclick = null;
+                r[x*n + y].innerText = bombs_around;
+                
+                if(not_bombs === 0)
+                {
+                    alert("Wygrałeś");
+                }
+            }
+        }
+
+        function count(x, y)
+        {
+            var result = 0;
+
+            if(x > 0 && y > 0)
+            {
+                if(fiel[x-1][y-1]) result++;
+            }
+            if(x > 0)
+            {
+                if(fiel[x-1][y]) result++;
+            }
+            if(x > 0 && y < fiel.length-1)
+            {
+                if(fiel[x-1][y+1]) result++;
+            }
+            if(y > 0)
+            {
+                if(fiel[x][y-1]) result++;
+            }
+            if(y < fiel.length-1)
+            {
+                if(fiel[x][y+1]) result++;
+            }
+            if(x < fiel.length-1 && y > 0)
+            {
+                if(fiel[x+1][y-1]) result++;
+            }
+            if(x < fiel.length-1)
+            {
+                if(fiel[x+1][y]) result++;
+            }
+            if(x < fiel.length-1 && y < fiel.length-1)
+            {
+                if(fiel[x+1][y+1]) result++;
+            }
+
+            return result;
+        }
+
+        function play()
+        {
+            n = document.querySelector("#size").value;
+            fiel = [];
+            not_bombs = 0;
+            field();
+        }
+
+        play();
+
+    </script>
+</body>
+</html>

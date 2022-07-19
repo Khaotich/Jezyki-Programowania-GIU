@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <center>
+        <input id="res"><br><br>
+        <button id="seven">7</button><button id="eight">8</button><button id="nine">9</button><button id="division">/</button><br>
+        <button id="four">4</button><button id="five">5</button><button id="six">6</button><button id="multiplication">*</button><br>
+        <button id="one">1</button><button id="two">2</button><button id="three">3</button><button id="subtraction">-</button><br>
+        <button id="zero">0</button><button id="dot">.</button><button id="enter">=</button><button id="add">+</button><br>
+    </center>
+    <script>
+
+        let res = document.querySelector('#res');
+        
+        nine.onclick = ()=>{res.value += '9';};
+        eight.onclick = ()=>{res.value += '8';};
+        seven.onclick = ()=>{res.value += '7';};
+        six.onclick = ()=>{res.value += '6';};
+        five.onclick = ()=>{res.value += '5';};
+        four.onclick = ()=>{res.value += '4';};
+        three.onclick = ()=>{res.value += '3';};
+        two.onclick = ()=>{res.value += '2';};
+        one.onclick = ()=>{res.value += '1';};
+        zero.onclick = ()=>{res.value += '0';};
+
+        add.onclick = ()=>{res.value += '+';};
+        subtraction.onclick = ()=>{res.value += '-';};
+        multiplication.onclick = ()=>{res.value += '*';};
+        division.onclick = ()=>{res.value += '/';};
+        dot.onclick = ()=>{res.value += '.';};
+
+        enter.onclick = ()=>{res.value = eval(res.value);};
+        
+    </script>
+</body>
+</html>

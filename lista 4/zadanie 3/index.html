@@ -1,0 +1,99 @@
+<html>
+  <meta charset="utf-8" />
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+      .bt {
+        height: 120px;
+        width: 120px;
+        font-size: 80px;
+      }
+      .score {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kamień, papier, nożyce do 10 razy!</h1>
+    <button id="papier" onclick="ruch('papier')" class="bt">✋</button>
+    <button id="nozyce" onclick="ruch('nozyce')" class="bt">✌️</button>
+    <button id="kamien" class="bt" onclick="ruch('kamien')">✊</button>
+    <br />
+    <p>Twoje punkty: <span id="your_score" class="score">0</span></p>
+    <p>Punkty przeciwnika: <span id="enemy_score" class="score">0</span></p>
+    <div>
+      <input type="text" id="txtmessage" />
+      <button id="reset">Nowa gra</button>
+      <ul id="messages"></ul>
+    </div>
+  </body>
+
+  <script>
+    var nick = prompt("Podaj swój nick");
+    var socket = io();
+    var id = "";
+
+    socket.emit("nick", nick);
+
+    var messages = document.getElementById("messages");
+    var reset_button = document.getElementById("reset");
+    var msg_input = document.getElementById("txtmessage");
+    var bt = document.querySelectorAll(".bt");
+
+    msg_input.focus();
+
+    // wysyłanie wiadomości o ruchu
+    function ruch(x) {
+      socket.emit("move", JSON.stringify({ what: x, player: id }));
+      for (let h of bt) h.disabled = true;
+    }
+
+    socket.on("disable", function () {
+      for (let h of bt) h.disabled = true;
+    });
+
+    // odbieranie wiadomości
+    socket.on("chat message", function (data) {
+      messages.innerHTML += "<li>" + data + "</li>";
+    });
+
+    // odbieranie wiadomości o resecie
+    socket.on("reset", function (msg) {
+      messages.innerHTML = "<li>" + msg + " " + nick + "!</li>";
+      for (let h of bt) h.disabled = false;
+      document.querySelector("#your_score").innerHTML = 0;
+      document.querySelector("#enemy_score").innerHTML = 0;
+    });
+
+    // odbieranie wiadomości o przyznanym id
+    socket.on("id", function (msg) {
+      id = msg;
+    });
+
+    socket.on("status", function (msg) {
+      let x = JSON.parse(msg);
+      if (id == 1) {
+        document.querySelector("#your_score").innerHTML = x[0];
+        document.querySelector("#enemy_score").innerHTML = x[1];
+      } else {
+        document.querySelector("#your_score").innerHTML = x[1];
+        document.querySelector("#enemy_score").innerHTML = x[0];
+      }
+    });
+
+    socket.on("mov", function () {
+      for (let h of bt) h.disabled = false;
+    });
+
+    // wysyłanie wiadomości z okienka czatu
+    msg_input.addEventListener("change", function () {
+      socket.emit("chat message", "<b>" + nick + ":</b> " + this.value);
+      this.value = "";
+    });
+
+    // wysyłanie wiadomości o resecie
+    reset_button.addEventListener("click", function () {
+      socket.emit("reset", "Witaj");
+    });
+  </script>
+</html>
